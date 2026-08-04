@@ -1,6 +1,7 @@
 [project]
+requires-python = ">=3.10,<3.13"
 version = "0.1.0"
-name = "mcp-server1"
+name = "math"
 dependencies = [
     "fastmcp",
 ]
