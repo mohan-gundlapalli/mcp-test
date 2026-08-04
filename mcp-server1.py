@@ -9,6 +9,13 @@ mcp = FastMCP(name="math")
 def add(first: int, second: int) -> int:
     return first + second
 
+@mcp.tool(
+        name="multipy_numbers",
+        description="Adds two numbers and returns the result"
+)
+def multiply(first: int, second: int) -> int:
+    return first * second
+
 @mcp.tool
 def greet(name: str) -> str:
     return f"Hello {name}"
