@@ -1,8 +1,11 @@
 from fastmcp import FastMCP
 
-mcp = FastMCP("First MCP")
+mcp = FastMCP(name="math")
 
-@mcp.tool
+@mcp.tool(
+        name="add_numbers",
+        description="Adds two numbers and returns the result"
+)
 def add(first: int, second: int) -> int:
     return first + second
 
